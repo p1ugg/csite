@@ -96,7 +96,7 @@ html, body{
 /* ================================= header BODY ======================== */
 
 .header__body {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   
@@ -147,7 +147,7 @@ html, body{
   align-items: center;
   justify-content: center;
   max-width: 1110px; 
-  margin: 100px auto 200px auto;
+  margin: 70px auto 90px auto;
 
 }
 
@@ -160,6 +160,7 @@ html, body{
 	line-height: 1; 
 
 }
+
 .header__body-text:after {
 	display: block;
 	position: absolute;
@@ -186,6 +187,37 @@ html, body{
   /* line-height: 134.09%; */
 }
 
+.header__body-texts{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 250px;
+}
+
+.header__body_block-text{
+  color: #000;
+  width: 226px;
+  flex-shrink: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header__body_block-text::first-letter {
+  font-size: 72px; /* 3 раза больше, чем 24px */
+  font-weight: bold; /* Опционально, чтобы выделить первую букву */
+}
+
+
+
+
+
+
+.header__body-block{
+  width: 343px;
+  text-align: start;
+}
+
 .header__btn-box {
   display: flex;
   align-items: center;
@@ -201,6 +233,19 @@ html, body{
 .header__btn-box:hover{
   transform: scale(1.05);
 }
+
+.colored-red {
+  color: rgb(239, 63, 63); 
+}
+
+.colored-blue {
+  color: rgb(68, 68, 233); 
+}
+
+.underlined-text {
+  text-decoration: underline;
+}
+
 
 
 .header__body-btn{
@@ -314,7 +359,6 @@ html, body{
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-
 }
 
 .about__body-btn {
