@@ -151,6 +151,8 @@ html, body{
 
 }
 
+
+
 .header__body-text {
   font-size: 18px;
   font-weight:600;
@@ -303,6 +305,7 @@ html, body{
 .about__row {
   display: flex; 
   justify-content: space-between; 
+  margin-bottom: 100px;
 }
 
 .about__row-item {
