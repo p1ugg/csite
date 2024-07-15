@@ -108,7 +108,7 @@ $(function () {
   })
 })
 
-/// Открыть модальное окно
+// Открыть модальное окно
 document.querySelectorAll(".btn_buy").forEach(button => {
   button.addEventListener("click", function() {
     const modalId = this.getAttribute("data-modal");
@@ -119,10 +119,10 @@ document.querySelectorAll(".btn_buy").forEach(button => {
 // Закрыть модальное окно
 document.querySelectorAll(".modal__close-btn").forEach(button => {
   button.addEventListener("click", function() {
-    const modalId = this.getAttribute("data-close");
-    document.getElementById(modalId).classList.remove("open");
+    this.closest(".modal").classList.remove("open");
   });
 });
+
 
 // Закрыть модальное окно при нажатии на Esc
 window.addEventListener('keydown', (e) => {

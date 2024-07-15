@@ -1254,6 +1254,10 @@ padding-left: 30px;
     visibility: hidden;
   }
   
+  .header__body_block-text{
+    font-size: 20px;
+  }
+  
   
 
 }
@@ -1292,6 +1296,10 @@ padding-left: 30px;
     height: 194px;
   }
 
+  .modal.open .modal__box {
+    transform: scale(0.75);
+  }
+
 }
 
 
@@ -1309,6 +1317,21 @@ padding-left: 30px;
   .directions__list-item--empty {
     display: none;
   }
+  .header__body-texts{
+    flex-direction: column;
+  }
+  
+  .header__body-block{
+    margin-bottom: 43px;
+    width: 100%;
+  }
+
+  .header__body-block:last-child{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  
+
 
 }
 
