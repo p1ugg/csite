@@ -954,6 +954,10 @@ line-height: normal;
 
 .inc {
   padding-bottom: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .line4{
@@ -1020,6 +1024,13 @@ background: #E0E0E0;
 .footer__items-link:hover{
   color:#FF3F3A;
   }
+
+.footer__text{
+  color: var(--grey, #999);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
 
 /* ----modal-------- */
 
