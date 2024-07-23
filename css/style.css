@@ -261,13 +261,6 @@ html, body{
 
 /* --------------------------------MAIN_ABOUT----------------------------- */
 
-.main {
-
-}
-
-.main__about {
-  
-}
 
 .about__inner {
   justify-content: center;
@@ -324,16 +317,6 @@ html, body{
   height: 110px;  
 }
 
-/* .about__row-item::before {
-  content: "";
-  top: 50%;
-  left: 0;
-  transform: translateY(50%);
-  display: block;
-  background: url("../images/icons/icon-fiel.svg") no-repeat;
-  width: 110px;
-  height: 110px;
-} */
 
 .about__btn-box {
   display: flex;
