@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поддержка</title>
 
-    <link rel="stylesheet" href="./css/style_contact.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_contact.css') }}">
+
 
 </head>
 
@@ -20,12 +21,14 @@
     <div class="row">
 
         <div class="img">
-            <img src="images/contacts-img.png">
+            <img class="about__imagee"
+                             src="{{ url_for('static', filename='images/contacts-img.png') }}"
+                             alt="">
         </div>
 
         <form action="https://api.web3forms.com/submit" method="POST">
 
-            <input type="hidden" name="access_key" value="200d3468-a29c-435a-818d-5832849f7c01">
+            <input type="hidden" name="access_key" value="5b89d31f-6691-4e03-a203-1f214078d1d4">
 
             <span>Ваше имя</span>
             <input type="text" name="name" id="" class="box" required placeholder="Введите ваше имя.." autocomplete="off">

@@ -1009,7 +1009,7 @@ background: #E0E0E0;
   }
 
 .footer__text{
-  color: var(--grey, #999);
+  color: #999; 
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
