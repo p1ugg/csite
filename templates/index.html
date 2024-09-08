@@ -55,18 +55,18 @@
                 </div>
                 <div class="header__body-texts">
                     <div class="header__body-block">
-              <span class="header__body_block-text">
+              <span class="header__body_block-text oval">
                 У нас самое доступное обучение! Курсы подойдут <span
                       class="colored-red">новичкам и профессионалам</span>!
               </span>
                     </div>
                     <div class="header__body-block">
-              <span class="header__body_block-text">
+              <span class="header__body_block-text oval">
                 Наши клиенты уверенно <span class="colored-blue">проходят собеседования</span> и раскрываются в новой профессии!
               </span>
                     </div>
                     <div class="header__body-block">
-              <span class="header__body_block-text">
+              <span class="header__body_block-text oval">
                 <span class="underlined-text">Понятным языком</span> поможем освоить самые разные профессии от бариста до менеджера по продажам.
               </span>
                     </div>
@@ -159,736 +159,10 @@
     </div>
 </section>
 
-<section class="main__directions directions" id="directions">
-    <div class="container">
-        <div class="directions__inner" id="dir_inn">
-            <div class="directions__heading heading heading--text-center">
-                <h3 class="directions__heading-title">Наши курсы</h3>
-                <!-- <a href="#" class="directions__btn-box">
-                  <div class="header__body-btn">
-                    Все курсы
-                  </div>
-                </a> -->
-            </div>
-            <div class="directions__body">
-                <ul class="directions__filter-box">
-                    <li class="directions__filter-item">
-                        <button class="directions__filter-btn directions__filter-btn--active" type="button"
-                                data-filter="all">Все
-                        </button>
-                    </li>
 
-                    <li class="directions__filter-item">
-                        <button class="directions__filter-btn" type="button"
-                                data-filter=".directions__list-item--popular">Популярное
-                        </button>
-                    </li>
-                    <li class="directions__filter-item">
-                        <button class="directions__filter-btn" type="button"
-                                data-filter=".directions__list-item--management">Менеджмент
-                        </button>
-                    </li>
-                    <li class="directions__filter-item">
-                        <button class="directions__filter-btn" type="button"
-                                data-filter=".directions__list-item--sales__service">Продажи и обслуживание
-                        </button>
-                    </li>
-                </ul>
-                <ul class="directions__list">
-
-                    <li class="mix directions__list-item directions__list-item--management directions__list-item--popular"
-                        data-order="1">
-                        <div class="directions__image-box f1"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">СММ Менеджер <img class="directions__icon-text"
-                                                                                    src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
-                                </div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    В этом курсе вы узнаете основы SMM-менеджмента и научитесь применять
-                                    различные методики и стратегии для продвижения бренда в социальных
-                                    сетях.
-
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-1" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-1">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: СММ Менеджер</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy" method="POST" action="/buy_course">
-                                            <h3 class="text-center">Форма покупки</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$" id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="btn_buy" type="submit" value="Купить">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-
-                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--management"
-                        data-order="2">
-                        <div class="directions__image-box f2"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Менеджер по продажам <img
-                                        class="directions__icon-text"
-                                        src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}"></div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Курс поможет стать успешным менеджером по продажам, освоив основные принципы и
-                                    стратегии,
-                                    эффективное представление услуг, понимание психологии покупателя и навыки убеждения
-                                    клиентов.
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-4" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-4">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Менеджер по продажам</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
-                        data-order="3">
-                        <div class="directions__image-box f3"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Бариста <img class="directions__icon-text"
-                                                                               src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
-                                </div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Курс "Бариста" поможет вам освоить искусство приготовления идеального кофе через
-                                    изучение основных
-                                    приемов, работу с оборудованием и создание вкусных напитков.
-
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-5" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-5">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Бариста</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
-                        data-order="4">
-                        <div class="directions__image-box f4"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Бармен <img class="directions__icon-text"
-                                                                              src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
-                                </div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Этот курс поможет вам научиться быть профессиональным барменом. Вы
-                                    узнаете различные методы смешивания и подачи коктейлей, а также
-                                    основные правила работы в баре.
-
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-6" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-6">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Бармен</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
-                        data-order="5">
-                        <div class="directions__image-box f5"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Хостес <img class="directions__icon-text"
-                                                                              src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
-                                </div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    В этом курсе вы узнаете, как стать успешной хостес и создать незабываемое
-                                    впечатление на гостей,
-                                    освоите профессиональные навыки, коммуникацию с клиентами и эффективную организацию
-                                    работы.
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-7" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-7">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Хостес</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
-                        data-order="6">
-                        <div class="directions__image-box f6"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Оператор колл-центра <img
-                                        class="directions__icon-text"
-                                        src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}"></div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Курс оператора call-центра: основы работы, общение с клиентами, решение проблем,
-                                    навыки базы данных
-                                    и программ call-центра.
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-9" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-9">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Оператор колл-центра</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--management"
-                        data-order="7">
-                        <div class="directions__image-box f7"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Секретарь-референт <img class="directions__icon-text"
-                                                                                          src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
-                                </div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Курс "Секретарь-референт" обучает профессиональным навыкам работы в секретариате,
-                                    включая
-                                    организацию работы, документацию, коммуникацию и компьютерные навыки для успешного
-                                    взаимодействия в
-                                    офисе.
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-10" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-10">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Секретарь-референт</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item" data-order="8">
-                        <div class="directions__image-box f8"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Таролог</div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    В этом курсе вы узнаете основы SMM-менеджмента и научитесь применять
-                                    различные методики и стратегии для продвижения бренда в социальных
-                                    сетях.
-
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-11" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-11">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Таролог</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item directions__list-item--management" data-order="9">
-                        <div class="directions__image-box f9"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Владелец продукта</div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Владелец продукта — ключевая роль в разработке. Курс охватывает задачи и обязанности
-                                    владельца
-                                    продукта, эффективное планирование и управление бэклогом для успешной реализации
-                                    проекта.
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-2" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-2">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Владелец продукта</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="mix directions__list-item directions__list-item--management directions__list-item--sales__service"
-                        data-order="10">
-                        <div class="directions__image-box f10"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">PR Менеджер</div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Этот курс предназначен для тех, кто хочет стать профессиональным PR менеджером и
-                                    овладеть основными
-                                    навыками и знаниями в этой области.
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-3" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-3">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: PR Менеджер</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-
-                    <li class="mix directions__list-item directions__list-item--sales__service" data-order="11">
-                        <div class="directions__image-box f11"></div>
-
-                        <div class="directions__link-content">
-                            <div class="directions__block-with_icon">
-
-                                <div class="directions__link-tag">Шаурмист</div>
-
-                            </div>
-                            <div class="directions__link-text__block">
-                                <p class="directions__link-text">
-                                    Этот курс раскроет тонкости и секреты приготовления шаурмы. Вы научитесь выбирать и
-                                    готовить мясо,
-                                    делать соусы и нарезать овощи. После курса сможете готовить шаурму для себя, семьи и
-                                    друзей.
-                                </p>
-                            </div>
-
-                            <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    500 ₽
-                            </div>
-                            <button data-modal="my-modal-8" class="btn_buy">Купить курс</button>
-                            <div class="modal" id="my-modal-8">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Шаурмист</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-
-                    <li class="mix directions__list-item directions__list-item--empty" data-order="12">
-                        <span>Новые курсы в разработке.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="how_to_pay">
     <div class="container">
-        <hr class="line3">
+        <!-- <hr class="line3"> -->
         <div class="how_to_pay__inner">
 
             <h3 class="directions__heading-title">
@@ -955,6 +229,738 @@
         </div>
     </div>
 </section>
+
+
+<section class="main__directions directions" id="directions">
+    <div class="container">
+        <div class="directions__inner" id="dir_inn">
+            <div class="directions__heading heading heading--text-center">
+                <h3 class="directions__heading-title">Наши курсы</h3>
+                <!-- <a href="#" class="directions__btn-box">
+                  <div class="header__body-btn">
+                    Все курсы
+                  </div>
+                </a> -->
+            </div>
+            <div class="directions__body">
+                <ul class="directions__filter-box">
+                    <li class="directions__filter-item">
+                        <button class="directions__filter-btn directions__filter-btn--active" type="button"
+                                data-filter="all">Все
+                        </button>
+                    </li>
+
+                    <li class="directions__filter-item">
+                        <button class="directions__filter-btn" type="button"
+                                data-filter=".directions__list-item--popular">Популярное
+                        </button>
+                    </li>
+                    <li class="directions__filter-item">
+                        <button class="directions__filter-btn" type="button"
+                                data-filter=".directions__list-item--management">Менеджмент
+                        </button>
+                    </li>
+                    <li class="directions__filter-item">
+                        <button class="directions__filter-btn" type="button"
+                                data-filter=".directions__list-item--sales__service">Продажи и обслуживание
+                        </button>
+                    </li>
+                </ul>
+                <ul class="directions__list">
+
+                    <li class="mix directions__list-item directions__list-item--management directions__list-item--popular"
+                        data-order="1">
+                        <div class="directions__image-box f1"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">СММ Менеджер <img class="directions__icon-text"
+                                                                                    src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
+                                </div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    В этом курсе вы узнаете основы SMM-менеджмента и научитесь применять
+                                    различные методики и стратегии для продвижения бренда в социальных
+                                    сетях.
+
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A1%D0%9C%D0%9C%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%22&s=9ea7e5db4094d1229e835c061f7734f9&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-1">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: СММ Менеджер</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy" method="POST" action="/buy_course">
+                                            <h3 class="text-center">Форма покупки</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$" id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email" required>
+                                            </div>
+
+                                            <p class="directions__link-text2">На эту почту мы отправим курс</p>
+
+                                            <div class="form-group">
+                                                <input class="btn_buy" type="submit" value="Купить">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+
+                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--management"
+                        data-order="2">
+                        <div class="directions__image-box f2"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Менеджер по продажам <img
+                                        class="directions__icon-text"
+                                        src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}"></div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Курс поможет стать успешным менеджером по продажам, освоив основные принципы и
+                                    стратегии,
+                                    эффективное представление услуг, понимание психологии покупателя и навыки убеждения
+                                    клиентов.
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC%22&s=8d4ec54f0e6769fee345b93b6daf0a1f&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-4">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Менеджер по продажам</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
+                        data-order="3">
+                        <div class="directions__image-box f3"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Бариста <img class="directions__icon-text"
+                                                                               src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
+                                </div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Курс "Бариста" поможет вам освоить искусство приготовления идеального кофе через
+                                    изучение основных
+                                    приемов, работу с оборудованием и создание вкусных напитков.
+
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%91%D0%B0%D1%80%D0%B8%D1%81%D1%82%D0%B0%22&s=6e843ee2c028c2fba85346978d0e6c80&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-5">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Бариста</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
+                        data-order="4">
+                        <div class="directions__image-box f4"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Бармен <img class="directions__icon-text"
+                                                                              src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
+                                </div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Этот курс поможет вам научиться быть профессиональным барменом. Вы
+                                    узнаете различные методы смешивания и подачи коктейлей, а также
+                                    основные правила работы в баре.
+
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%91%D0%B0%D1%80%D0%BC%D0%B5%D0%BD%22&s=464a5dab7c30a042412ad30209ad3796&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-6">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Бармен</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
+                        data-order="5">
+                        <div class="directions__image-box f5"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Хостес <img class="directions__icon-text"
+                                                                              src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
+                                </div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    В этом курсе вы узнаете, как стать успешной хостес и создать незабываемое
+                                    впечатление на гостей,
+                                    освоите профессиональные навыки, коммуникацию с клиентами и эффективную организацию
+                                    работы.
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A5%D0%BE%D1%81%D1%82%D0%B5%D1%81%22&s=5bf79181516888095aa353fcfc770272&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-7">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Хостес</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--sales__service"
+                        data-order="6">
+                        <div class="directions__image-box f6"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Оператор колл-центра <img
+                                        class="directions__icon-text"
+                                        src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}"></div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Курс оператора call-центра: основы работы, общение с клиентами, решение проблем,
+                                    навыки базы данных
+                                    и программ call-центра.
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%20%D0%BA%D0%BE%D0%BB%D0%BB-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0&s=359f240c2ccc6c5b977d6423ae26fbb4&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-9">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Оператор колл-центра</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item directions__list-item--popular directions__list-item--management"
+                        data-order="7">
+                        <div class="directions__image-box f7"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Секретарь-референт <img class="directions__icon-text"
+                                                                                          src="{{ url_for('static', filename='images/icons/flame-icon1.gif') }}">
+                                </div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Курс "Секретарь-референт" обучает профессиональным навыкам работы в секретариате,
+                                    включая
+                                    организацию работы, документацию, коммуникацию и компьютерные навыки для успешного
+                                    взаимодействия в
+                                    офисе.
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.kassa.shop/?m=53528&oa=1000&s=811e889e5c170f15d5c806d88487ec89&currency=RUB&o=%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D0%B0%D1%80%D1%8C-%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%82&strd=1'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-10">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Секретарь-референт</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item" data-order="8">
+                        <div class="directions__image-box f8"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Таролог</div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    В этом курсе вы узнаете основы SMM-менеджмента и научитесь применять
+                                    различные методики и стратегии для продвижения бренда в социальных
+                                    сетях.
+
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A2%D0%B0%D1%80%D0%BE%D0%BB%D0%BE%D0%B3%22&s=f80f1c2511c51afc40aa2f015f8173fb&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-11">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Таролог</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item directions__list-item--management" data-order="9">
+                        <div class="directions__image-box f9"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Владелец продукта</div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Владелец продукта — ключевая роль в разработке. Курс охватывает задачи и обязанности
+                                    владельца
+                                    продукта, эффективное планирование и управление бэклогом для успешной реализации
+                                    проекта.
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%22&s=6919803c4ffa05b15c516a1bf5b577f0&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-2">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Владелец продукта</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+                    <li class="mix directions__list-item directions__list-item--management directions__list-item--sales__service"
+                        data-order="10">
+                        <div class="directions__image-box f10"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">PR Менеджер</div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Этот курс предназначен для тех, кто хочет стать профессиональным PR менеджером и
+                                    овладеть основными
+                                    навыками и знаниями в этой области.
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22PR%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%22&s=b3a59df937f1c5253584a112ba1309ba&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-3">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: PR Менеджер</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+
+                    <li class="mix directions__list-item directions__list-item--sales__service" data-order="11">
+                        <div class="directions__image-box f11"></div>
+
+                        <div class="directions__link-content">
+                            <div class="directions__block-with_icon">
+
+                                <div class="directions__link-tag">Шаурмист</div>
+
+                            </div>
+                            <div class="directions__link-text__block">
+                                <p class="directions__link-text">
+                                    Этот курс раскроет тонкости и секреты приготовления шаурмы. Вы научитесь выбирать и
+                                    готовить мясо,
+                                    делать соусы и нарезать овощи. После курса сможете готовить шаурму для себя, семьи и
+                                    друзей.
+                                </p>
+                            </div>
+
+                            <div class="directions__link-btn">
+                  <span class="directions__inner-content__text">
+                    1000 ₽
+                            </div>
+                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A8%D0%B0%D1%83%D1%80%D0%BC%D0%B8%D1%81%D1%82%22&s=c0e755c7fc78f97bb74cce457fc37656&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
+                            <!-- <div class="modal" id="my-modal-8">
+                                <div class="modal__box">
+                                    <button class="modal__close-btn" id="close-my-modal-btn">
+                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                                  fill="#333333"/>
+                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                                  fill="#333333"/>
+                                        </svg>
+                                    </button>
+                                    <h2 class="directions__heading-title">Курс: Шаурмист</h2>
+                                    <div class="registration-cssave">
+
+                                        <form class="form_buy">
+                                            <h3 class="text-center">Форма входа</h3>
+                                            <div class="form-group">
+                                                <input class="form-control item" type="text" name="username"
+                                                       pattern="^[a-zA-Z0-9_.-]*$"
+                                                       id="name" placeholder="Имя" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input class="form-control item" type="email" name="email" id="email"
+                                                       placeholder="Email"
+                                                       required>
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+
+
+                    <li class="mix directions__list-item directions__list-item--empty" data-order="12">
+                        <span>Новые курсы в разработке.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- <section class="mailing">
   <div class="container">
