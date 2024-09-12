@@ -209,10 +209,8 @@ html, body{
 .header__body-title2{
   text-align: center;
   font-size: 28px;
-  font-weight: 900;
   margin-top: 70px;
   color: var(--dark, #323232);
-  /* line-height: 134.09%; */
 }
 
 
