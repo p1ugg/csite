@@ -162,5 +162,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
   type();
 });
 
+function processPayment(courseId) {
+  fetch('/process_payment', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({course_id: courseId})  // Отправляем идентификатор курса
+  })
+  .then(response => response.json())
+  .then(data => {
+      window.location.href = data.redirect_url;  // Перенаправляем пользователя на страницу оплаты
+  });
+};
+
+
 
 

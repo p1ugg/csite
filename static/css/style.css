@@ -213,6 +213,16 @@ html, body{
   color: var(--dark, #323232);
 }
 
+.directions__sales-price{
+  
+  font-size: 16px;
+  font-weight: 400;
+  color:#56535b;
+  text-align: start;
+  transition: all 1s;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
 
 .header__body-texts{
   display: flex;
@@ -759,19 +769,25 @@ line-height: 146.28%; /* 52.661px */
 
 .directions__link-text {
   color: #787A80;
-  margin-bottom: 20px;
   text-align: start;
   height: 100px;
+  margin-bottom: 8px;
 }
 
+.directions__block-price{
+  text-align: start;
+  
+}
 .directions__link-btn {
   color: #1E212C;
-  display: flex;
+  display: block;
   font-weight: 700;
   transition: all 1s;
+  margin-bottom: 5px;
   font-size: 22px;
   /* position: absolute;
   bottom: 10px; */
+
 }
 .direction__inner-content__price {
   text-align: start;
@@ -783,8 +799,8 @@ line-height: 146.28%; /* 52.661px */
 
 .directions__inner-content__text {
   font-size: 26px;
-  font-weight: 400;
-  color:#1E212C;
+  font-weight: 700;
+  color:#e53131;
   text-align: start;
   transition: all 1s;
 }
@@ -795,14 +811,14 @@ line-height: 146.28%; /* 52.661px */
   color:#1E212C;
 }
 
-.directions__link-btn::after {
+/* .directions__link-btn::after {
   content: "";
   display: block;
   width: 24px;
   height: 24px;
   background: url("../images/icons/arrow-right-red.svg") 0 2px / 100% no-repeat;
   margin-left: 11px;
-}
+} */
 
 /* ---------------------------------=====MAILING=====----------------------------------- */
 /* ---------------------------------=====MAILING=====----------------------------------- */
@@ -1154,7 +1170,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 

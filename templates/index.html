@@ -236,11 +236,7 @@
         <div class="directions__inner" id="dir_inn">
             <div class="directions__heading heading heading--text-center">
                 <h3 class="directions__heading-title">Наши курсы</h3>
-                <!-- <a href="#" class="directions__btn-box">
-                  <div class="header__body-btn">
-                    Все курсы
-                  </div>
-                </a> -->
+                
             </div>
             <div class="directions__body">
                 <ul class="directions__filter-box">
@@ -290,45 +286,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A1%D0%9C%D0%9C%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%22&s=9ea7e5db4094d1229e835c061f7734f9&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-1">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: СММ Менеджер</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy" method="POST" action="/buy_course">
-                                            <h3 class="text-center">Форма покупки</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$" id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email" required>
-                                            </div>
-
-                                            <p class="directions__link-text2">На эту почту мы отправим курс</p>
-
-                                            <div class="form-group">
-                                                <input class="btn_buy" type="submit" value="Купить">
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(1)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -355,44 +323,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC%22&s=8d4ec54f0e6769fee345b93b6daf0a1f&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-4">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Менеджер по продажам</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(2)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -418,44 +359,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%91%D0%B0%D1%80%D0%B8%D1%81%D1%82%D0%B0%22&s=6e843ee2c028c2fba85346978d0e6c80&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-5">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Бариста</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(3)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -481,43 +395,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%91%D0%B0%D1%80%D0%BC%D0%B5%D0%BD%22&s=464a5dab7c30a042412ad30209ad3796&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-6">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Бармен</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(4)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -543,44 +431,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A5%D0%BE%D1%81%D1%82%D0%B5%D1%81%22&s=5bf79181516888095aa353fcfc770272&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-7">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Хостес</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(5)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -605,44 +466,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%20%D0%BA%D0%BE%D0%BB%D0%BB-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0&s=359f240c2ccc6c5b977d6423ae26fbb4&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-9">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Оператор колл-центра</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(6)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -669,44 +503,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.kassa.shop/?m=53528&oa=1000&s=811e889e5c170f15d5c806d88487ec89&currency=RUB&o=%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D0%B0%D1%80%D1%8C-%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%82&strd=1'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-10">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Секретарь-референт</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(7)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -729,44 +536,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A2%D0%B0%D1%80%D0%BE%D0%BB%D0%BE%D0%B3%22&s=f80f1c2511c51afc40aa2f015f8173fb&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-11">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Таролог</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(8)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -789,44 +569,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%92%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0%22&s=6919803c4ffa05b15c516a1bf5b577f0&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-2">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Владелец продукта</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(9)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -849,44 +602,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22PR%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%22&s=b3a59df937f1c5253584a112ba1309ba&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-3">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: PR Менеджер</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(10)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -910,44 +636,17 @@
                             </div>
 
                             <div class="directions__link-btn">
-                  <span class="directions__inner-content__text">
-                    1000 ₽
-                            </div>
-                            <button onclick="window.location.href='https://pay.freekassa.com/?oa=1000&o=%D0%9A%D1%83%D1%80%D1%81%20%22%D0%A8%D0%B0%D1%83%D1%80%D0%BC%D0%B8%D1%81%D1%82%22&s=c0e755c7fc78f97bb74cce457fc37656&currency=RUB&m=53528'" class="btn_buy">Купить курс</button>
-                            <!-- <div class="modal" id="my-modal-8">
-                                <div class="modal__box">
-                                    <button class="modal__close-btn" id="close-my-modal-btn">
-                                        <svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
-                                                  fill="#333333"/>
-                                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
-                                                  fill="#333333"/>
-                                        </svg>
-                                    </button>
-                                    <h2 class="directions__heading-title">Курс: Шаурмист</h2>
-                                    <div class="registration-cssave">
-
-                                        <form class="form_buy">
-                                            <h3 class="text-center">Форма входа</h3>
-                                            <div class="form-group">
-                                                <input class="form-control item" type="text" name="username"
-                                                       pattern="^[a-zA-Z0-9_.-]*$"
-                                                       id="name" placeholder="Имя" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <input class="form-control item" type="email" name="email" id="email"
-                                                       placeholder="Email"
-                                                       required>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn_buy" type="submit_mailing">Оплатить</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="directions__sales-price">
+                                    2100 ₽
                                 </div>
-                            </div> -->
+                                <div class="directions__block-price">
+                                    <span class="directions__inner-content__text">
+                                        500 ₽
+                                </div>
+                                    
+                            </div>
+                            <button onclick="processPayment(11)" class="btn_buy">Купить курс</button>
+                            
                         </div>
                     </li>
 
@@ -1019,7 +718,7 @@
                                          src="{{ url_for('static', filename='images/icon/right-arrow.svg') }}">
 
                                     <span class="footer__items-link">
-                      Маркетинг
+                      Все
                     </span>
                                 </a>
                             </li>
@@ -1032,19 +731,7 @@
                                          src="{{ url_for('static', filename='images/icon/right-arrow.svg') }}">
 
                                     <span class="footer__items-link">
-                      IT
-                    </span>
-                                </a>
-                            </li>
-                        </div>
-
-                        <div class="footer__items-block">
-                            <li class="fotter__link-item">
-                                <a href="#dir_inn" class="footer_link">
-                                    <img class="footer_right-arrow"
-                                         src="{{ url_for('static', filename='images/icon/right-arrow.svg') }}">
-                                    <span class="footer__items-link">
-                      HR
+                      Поплуярное
                     </span>
                                 </a>
                             </li>
@@ -1057,6 +744,18 @@
                                          src="{{ url_for('static', filename='images/icon/right-arrow.svg') }}">
                                     <span class="footer__items-link">
                       Менеджмент
+                    </span>
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="footer__items-block">
+                            <li class="fotter__link-item">
+                                <a href="#dir_inn" class="footer_link">
+                                    <img class="footer_right-arrow"
+                                         src="{{ url_for('static', filename='images/icon/right-arrow.svg') }}">
+                                    <span class="footer__items-link">
+                    Продажи и обслуживание 
                     </span>
                                 </a>
                             </li>
